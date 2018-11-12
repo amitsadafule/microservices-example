@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/49779354/how-to-set-custom-max-connection-pool-size-in-feignclient-configuration-in-spri
