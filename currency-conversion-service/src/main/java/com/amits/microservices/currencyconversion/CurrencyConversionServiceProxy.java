@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.PathVariable;
  *
  * 13-Nov-2018
  */
-@FeignClient(name="currency-exchange-service")
+//@FeignClient(name="currency-exchange-service") instead of sending request directly to exchange service,
+//send it throug zuul api gateway
+@FeignClient(name="netlix-zuul-api-gateway-server")
 @RibbonClient(name="currency-exchange-service")
 public interface CurrencyConversionServiceProxy {
 
-	@GetMapping("/currency-exchange/from/{from}/to/{to}")
+	@GetMapping("/currency-exchange-service/currency-exchange/from/{from}/to/{to}")
 	public CurrencyConversionBean retrieveCurrencyExchange(
 			@PathVariable(name="from") String from, 
 			@PathVariable(name="to") String to
