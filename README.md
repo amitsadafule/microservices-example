@@ -7,8 +7,8 @@ Tools used
 5. sleuth - for distributed tracing
 
 
-Installations:
-https://www.rabbitmq.com/install-homebrew.html
+Installations: <br>
+https://www.rabbitmq.com/install-homebrew.html <br>
 https://zipkin.io/pages/quickstart.html
 
 How to run
@@ -17,4 +17,3 @@ How to run
 3. Go to zipkin dashboard : http://localhost:9411/zipkin/
 4. Go to Eureka dashboard : http://localhost:8761/
 5. Go to h2 console : http://localhost:8000/h2-console/
-6. 
